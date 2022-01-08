@@ -1,0 +1,80 @@
+1.intro = 17.12.0
+2.install = npx create-react-app
+3.folder structure
+    manifest.json = for web apps
+    robots.txt    = for search engine opt
+    app.test.js   = for testing jest
+    service worker = to store cache so that website to show even when no internet
+    READ.MD       = instructions
+
+4.components
+5.class component
+6.functional component
+    <Functional text={"hello dear"} data={"fhjdcjjkzcbjkb"}/>
+    eg
+    function Functional(p) {
+    return (
+        <div>
+            <h1>{p.text}</h1>
+            <p>{p.data}</p>
+        </div>
+    )
+    }
+7.Class component
+    data passing is same
+    we just have to import props in render
+    const {text,data}=this.props
+    we can alsi write like
+    <h1>{this.props.text}</h1>
+
+8.props
+  used to send data from parent component to child component
+
+9.state
+  it is an class internal object
+  and its private
+  works as var
+
+10.Hide and show
+   this.state ={
+            show : true
+        }
+    }
+    render() {
+        const { show} = this.state;
+        return (
+            <div>
+                {
+                    show ? 
+                    <h1>this is true</h1> :
+                    null
+                }
+            <button onClick={()=>{this.setState({show : !show})}}>Toggle</button>
+        </div>
+11.event handling 
+  functional component          class component
+    no need to use this         need to use this
+
+12.LIFE CYCLE
+    1.constructor
+    2.static getDerivedStateFromState
+    3.ShouldComponentUpdate
+    4.render
+    5.getShapshotBeforeUpdate
+    6.componentDidMount
+    7.componentDidUpdate
+    8.componentWillUnmount 
+
+13.componentDidMount
+14.componentDidUpdate
+15.componentWillUnmount
+
+16.hooks
+17.useEffect
+18.forms 
+19.Form validation
+20.map function
+21.style
+22.Router
+
+23.API calling

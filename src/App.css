@@ -1,0 +1,19 @@
+.main{
+    text-align: center;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 25px 10px 5px #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f3f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+}
